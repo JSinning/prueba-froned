@@ -1,0 +1,12 @@
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\bin\Debug\frontend -prueba.exe.config
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\bin\Debug\frontend -prueba.exe
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\bin\Debug\frontend -prueba.pdb
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend -prueba.csprojAssemblyReference.cache
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend__prueba.Form1.resources
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend__prueba.Properties.Resources.resources
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend -prueba.csproj.GenerateResource.cache
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend -prueba.exe
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend -prueba.pdb
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrea.com.co\Documents\proyectos visual\frontend -prueba\frontend -prueba\obj\Debug\frontend -prueba.csproj.CopyComplete
