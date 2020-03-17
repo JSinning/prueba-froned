@@ -1,15 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.IO;
+using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
-using System.IO;
-using Newtonsoft.Json;
 
 namespace frontend__prueba
 {
@@ -24,14 +19,24 @@ namespace frontend__prueba
         private async void Form1_Load(object sender, EventArgs e)
         {
             string respuesta = await postGet();
+            string usersrespueta = await usersGet();
             //Console.WriteLine(respuesta);
             List<petitionGET> lista = JsonConvert.DeserializeObject<List<petitionGET>>(respuesta);
-            foreach(petitionGET dta in lista)
+            List<petitionUsersGet> userlist = JsonConvert.DeserializeObject<List<petitionUsersGet>>(usersrespueta);
+            foreach (petitionGET dta in lista)
             {
-                Console.WriteLine(dta.id);
-                //item.SubItems.Add();
-               listView1.Items.Add(dta.title);
-                listView1.Items.Add(dta.id.ToString());
+                ListViewItem item = new ListViewItem(dta.id.ToString());
+                foreach(petitionUsersGet dtusers in userlist)
+                {
+                    if(dtusers.id == dta.userid)
+                    {
+                        item.SubItems.Add(dtusers.name);
+                    }
+                }
+
+                item.SubItems.Add(dta.title);
+                item.SubItems.Add(dta.body);
+                listView1.Items.Add(item);
 
             }
         }
@@ -44,6 +49,12 @@ namespace frontend__prueba
             return await stream.ReadToEndAsync();
         }
 
-       
+        public async Task<string> usersGet()
+        {
+            WebRequest request = WebRequest.Create(url + "/users");
+            WebResponse response = request.GetResponse();
+            StreamReader stream = new StreamReader(response.GetResponseStream());
+            return await stream.ReadToEndAsync();
+        }
     }
 }

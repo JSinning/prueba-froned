@@ -29,31 +29,45 @@
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.titulo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.idusuario = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.titulo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.descripcion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.idusuario,
             this.titulo,
-            this.id});
+            this.descripcion});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(45, 24);
+            this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(637, 190);
+            this.listView1.Size = new System.Drawing.Size(723, 425);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
-            // titulo
-            // 
-            this.titulo.Text = "titulo";
-            this.titulo.Width = 107;
-            // 
             // id
             // 
             this.id.Text = "id";
+            // 
+            // idusuario
+            // 
+            this.idusuario.Text = "idusuario";
+            // 
+            // titulo
+            // 
+            this.titulo.Text = "titulo";
+            this.titulo.Width = 87;
+            // 
+            // descripcion
+            // 
+            this.descripcion.Text = "descripcion";
+            this.descripcion.Width = 130;
             // 
             // Form1
             // 
@@ -71,8 +85,10 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader titulo;
         private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader idusuario;
+        private System.Windows.Forms.ColumnHeader titulo;
+        private System.Windows.Forms.ColumnHeader descripcion;
     }
 }
 
